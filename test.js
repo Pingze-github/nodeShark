@@ -10,7 +10,9 @@ const proxySet = require('./lib/proxySet');
 
 ~async function(){
   console.log(await proxySet.setLANProxy(8888, ['http', 'https']));
-  // console.log(await proxySet.resetLANProxy());
+  console.log(await proxySet.resetLANProxy());
+  // 不是很好的办法
+  proxySet.reopenIE();
 }();
 
 // 代理服务器

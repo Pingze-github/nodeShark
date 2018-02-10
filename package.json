@@ -1,0 +1,27 @@
+{
+  "name": "nodeshark",
+  "version": "1.0.0",
+  "description": "Postman+Fiddler，前后端辅助开发利器。",
+  "main": "test.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "form-data": "^2.3.1",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pingze-github/nodeShark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pingze-github/nodeShark/issues"
+  },
+  "homepage": "https://github.com/Pingze-github/nodeShark#readme"
+}

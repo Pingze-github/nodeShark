@@ -35,7 +35,7 @@ const proxySet = require('./lib/proxySet');
   request({
     method: 'POST',
     url: 'http://localhost:3000/test',
-    timeout: 1000,
+    timeout: 3000,
     query: {
       a: 1,
       b: 2

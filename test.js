@@ -35,6 +35,7 @@ async function test2() {
   request({
     method: 'POST',
     url: 'http://localhost:3000/test',
+    proxy: 'http://127.0.0.1:8888',
     timeout: 3000,
     query: {
       a: 1,
@@ -52,15 +53,17 @@ async function test2() {
     }
   })
     .then(res => {
-      console.log('RESPONSE', {
+      console.log('回复:', {
         status: res.statusCode,
-        headers: res.headers
+        headers: res.headers,
+        body: res.body,
       })
     })
     .catch(err => {
       console.error(err);
     });
 }
+test2();
 
 async function test3() {
 
@@ -93,4 +96,4 @@ async function test3() {
   const proxylogs = await db.all('SELECT * FROM tbl_proxylog');
   console.log(proxylogs);
 }
-test3();
+// test3();

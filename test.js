@@ -48,7 +48,8 @@ async function test2() {
       'f': new File('./.gitignore'),
     },
     headers: {
-      'Content-Type': 'multipart/form-data'
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'multipart/form-data'
       // 'content-type': 'text/plain'
     }
   })

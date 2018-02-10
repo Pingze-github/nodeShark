@@ -34,7 +34,7 @@ async function test2() {
   const request = require('./lib/request');
   request({
     method: 'POST',
-    url: 'http://localhost:3000/test',
+    url: 'https://localhost:3000/test',
     proxy: 'http://127.0.0.1:8888',
     timeout: 3000,
     query: {

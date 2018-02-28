@@ -1,18 +1,19 @@
 {
   "name": "nodeshark",
+  "productName": "nodeshark",
   "version": "1.0.0",
   "description": "Postman+Fiddler，前后端辅助开发利器。",
-  "main": "test.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "src/main.js",
   "dependencies": {
     "form-data": "^2.3.1",
     "sqlite3": "^3.1.13"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "elec": "electron src/main.js"
   },
   "repository": {
     "type": "git",
